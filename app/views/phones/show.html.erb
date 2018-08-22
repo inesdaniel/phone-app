@@ -1,0 +1,7 @@
+<p><%= @phone.id %></p>
+<p><%= @phone.color %></p>
+<p><%= @phone.brand %></p>
+<p><%= @phone.size %></p>
+
+<p>Delete this phone:</p>
+<%= button_to "delete", "/phones/#{@phone.id}", method: :delete %>

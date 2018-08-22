@@ -1,0 +1,6 @@
+<%= form_tag "/phones/#{@phone.id}", method: :patch do %>
+  <p>color: <input type="text" name="color" value="<%= @phone.color %>"></p>
+  <p>brand: <input type="text" name="brand" value="<%= @phone.brand %>"></p>
+  <p>size: <input type="text" name="size" value="<%= @phone.size %>"></p>
+  <p><input type="submit" value="edit the phone"></p>
+<% end %>

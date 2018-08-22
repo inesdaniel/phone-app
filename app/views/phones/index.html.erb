@@ -1,2 +1,9 @@
 <h1>Phones#index</h1>
-<p>Find me in app/views/phones/index.html.erb</p>
+
+<% @phones.each do |phone| %>
+  <p><%= phone.id %></p>
+  <p><%= phone.color %></p>
+  <p><%= phone.brand %></p>
+  <p><%= phone.size %></p>
+  <hr>
+<% end %>
