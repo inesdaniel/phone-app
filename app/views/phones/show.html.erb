@@ -3,5 +3,8 @@
 <p><%= @phone.brand %></p>
 <p><%= @phone.size %></p>
 
-<p>Delete this phone:</p>
-<%= button_to "delete", "/phones/#{@phone.id}", method: :delete %>
+    
+<p>Edit this phone: <a href="/phones/<%=@phone.id%>/edit">Edit</a></p>
+
+
+<p>Delete this phone: <%= button_to "delete", "/phones/#{@phone.id}", method: :delete %></p>
